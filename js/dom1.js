@@ -36,6 +36,8 @@ function addCallBack() {
 }
 
 delBtn.innerText = "삭제";
+// delBtn.setAttribute('class', 'btn btn-danger');
+delBtn.className = 'btn btn-danger';
 
 delBtn.addEventListener('click', () => {
   delBtn.parentElement.remove();
@@ -45,8 +47,18 @@ document.getElementById('btn')
   .addEventListener('click', () => addCallBack());
 
 document.querySelectorAll('#show ul button').forEach(item => {
-  console.log(item);
+  // console.log(item);
   item.addEventListener('click', () => {
     item.parentElement.remove();
   });
+});
+
+document.querySelectorAll('#show li').forEach(x => {
+  console.log(x);
+  x.addEventListener('mouseover', () => {
+   x.style.backgroundColor = 'cyan'; 
+  });
+  x.addEventListener('mouseout', () => {
+    x.style.backgroundColor = ''; 
+   });
 });
