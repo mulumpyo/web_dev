@@ -1,9 +1,5 @@
 // function6.js
 
-let num = 10;
+let titles = ["이름", "나이", "연락처"];
 
-let obj = {
-  name : "홍길동",
-  age : 20,
-  phone: "010-1111-2222"
-}
+let tlist = "";

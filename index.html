@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
-  <style>
-    #userValue {
-      background-color: #6e6e73;
-      border: 1px solid #000;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/250430.css" type="text/css">
 </head>
 
 <body>
-  <!--  -->
-  <div id="show">
+  <div class="container">
     성별: <input type="text" id="userValue">
     <button id="searchBtn" class="btn btn-primary">조회</button>
+    <select name="gender" id="gender">
+      <option value="all">All</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
 
   </div>
 
   <script src="./js/tableTag.js"></script>
   <script src="./js/jsonData.js"></script>
   <script src="./js/function8.js"></script>
+  <!-- <script src="./js/object2.js"></script> -->
+  <script src="./js/object5.js"></script>
+
 
 </body>
 

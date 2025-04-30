@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Control</title>
+
+  <style>
+    body > ul li {
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>
+      과일: <input id="fruit" type="text">
+    </li>
+    <li>
+      가격: <input id="price" type="number" value="0">
+    </li>
+    <li>
+      <button id="btn">등록</button>
+    </li>
+  </ul>
+  <div id="show">
+    <ul>
+      <li><span>바나나</span> <span>2,000원</span><button id="delBtn">삭제</button></li>
+      <li><span>대충과일</span> <span>9,000원</span><button id="delBtn">삭제</button></li>
+      <li><span>두리안비슷한거</span> <span>5,000원</span><button id="delBtn">삭제</button></li>
+    </ul>
+  </div>
+  <script src="./js/dom1.js"></script>
+</body>
+</html>
